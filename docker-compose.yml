@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  service:
+    build: .
+    volumes:
+      - .:/code
+      - /code/node_modules
+    ports:
+      - 3000:80
+      - 9229:9229
+    command: nodemon --inspect -L src/server.js 

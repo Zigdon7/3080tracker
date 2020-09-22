@@ -1,0 +1,14 @@
+{
+  "name": "scraper_app",
+  "version": "1.0.0",
+  "description": "Node.js on Docker",
+  "author": "First Last <first.last@example.com>",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon src/server.js localhost 8080"
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "puppeteer": "^1.19.0"
+  }
+}
